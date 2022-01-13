@@ -1,0 +1,146 @@
+
+body {
+
+   background-image: url("../images/sea.jpg"); /*permet de definir la couleur de fond de la page basse*/
+   background-repeat: no-repeat;
+   background-size: cover;
+  margin: auto;
+  width: 80%
+}
+
+
+
+p, li {
+  color: #0F2C67;
+}
+
+h1 {
+
+  text-align: center; /*permet de centrer le texte*/
+}
+
+h2 {
+
+  text-align: center;
+}
+
+
+article, aside, footer {
+  background-color: white;/*permet de specifier la couleur de l'arriere plan*/
+  padding: 1%;
+}
+
+nav {
+  height: 90px;
+
+  margin-bottom: 10px;
+  display:flex;
+
+}
+
+nav ul {
+  flex: auto;
+  display: flex;
+  list-style-type: none; /*enlève les puces*/
+
+}
+
+nav li {
+  flex:auto;
+  position: relative; /*permet de specifier la façon dont le contenu est positionné*/
+  display: inline-block;
+  font-size: 22px;
+
+
+}
+
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  text-align: center;
+  height: 30px; /*permet de specifier la hauteur de la zone de contenu*/
+  width: 200px; /*permet de specifier la longueur de la zone de contenu*/
+  border: solid;
+  border-radius: 12px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  font-size: 22px;
+
+}
+
+nav a:hover{
+  word-wrap: break-word; /*permet de specifier qu'un mot peut être rompu afin d'eviter les débordements*/
+  overflow: auto;
+}
+
+
+.deroule-contenu{
+  display: none;
+  background-color: transparent;
+  position:absolute;
+  z-index: 1;
+}
+
+nav ul li:hover .deroule-contenu {
+  display: block;
+  position:absolute;
+ /* Hauteur du menu + hauteur du padding top et bottom : 30 + 3 + 3 = 36 */
+  left: -40px;
+}
+
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 5; /*permet de modifier les dimmensions du contenu qui se trouve dans l'article*/
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  background-color: white; /*permet de definir la couleurr de l'arriere plan*/
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+footer {
+  margin-top: 10px; /*permet de specifier l'espace entre la bordure haute et la bordure basse du footer*/
+}
+
+div ul {
+
+  padding: 0; /*permet de definir les différents écarts de remplissage */
+  list-style-type: none; /*permet de definir l'apparence de la puce d'un élement de la liste*/
+  display: flex; /*permet de controler l'affichages*/
+
+}
+
+div li {
+  display: inline;
+  text-align: center;
+
+}
+
+
+div a {
+  display: inline-block;
+  text-transform: uppercase; /*permet de contoler la casse du texte*/
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+
+}
+.faq{
+  font-size: 20px;/*spécifie la taille de la fonte dans laquelle sera affiché le texte pour le faq*/
+}
+
+.center{
+  text-align: center;/*permet de centrer le texte*/
+}
